@@ -19,7 +19,7 @@ services:
       - ./certbot/conf/:/etc/letsencrypt/:rw
 
   backend:
-    image: vb_fidelite_nodejs_server:latest
+    image: easy-fidelity_nodejs_server:latest
     ports:
       - "8080:8080"
     restart: always
