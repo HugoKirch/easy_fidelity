@@ -1,0 +1,36 @@
+<%- include('./header.ejs') %>
+        <link rel="stylesheet" href="/public/css/login.css">
+        <script src="/public/js/login.js"></script>
+    </head>
+    <body>
+        <!-- Nav -->
+        <nav class="container-fluid">
+            <ul>
+                <li><a href="https://vacheburger.fr"><strong>Vache Burger</strong></a></li>
+            </ul>
+            <ul>
+                <li><button class="btn btn-outline-primary" onclick="window.location.href='./register'">S'enregistrer</button></li>
+            </ul>
+        </nav><!-- ./ Nav -->
+
+        <!-- Main -->
+        <main class="container">
+            <article class="grid">
+                <div>
+                    <hgroup>
+                        <h1>Connexion</h1>
+                        <h2>Entrez vos identifiants</h2>
+                    </hgroup>
+                    <form id="login_form">
+                        <fieldset>
+                            <input type="email" name="login" id="email" placeholder="Mail" aria-label="email" autocomplete="email" required>
+                            <input type="password" name="password" id="password" placeholder="Mot de passe" aria-label="Password" autocomplete="current-password" required>
+                        </fieldset>
+                        <button type="submit" id="submit_btn" class="contrast">Se connecter</button>
+                    </form>
+                </div>
+                <div></div>
+            </article>
+        </main><!-- ./ Main -->
+    </body>
+</html>

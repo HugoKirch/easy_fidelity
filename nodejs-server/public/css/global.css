@@ -1,0 +1,15 @@
+html {
+    min-height: 100%;
+}
+body {
+    background-color: black;
+    background-size: contain;
+    background-repeat: repeat;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100vh),url(https://vacheburger.fr/wp-content/uploads/2022/11/vache-burger-pattern.webp)!important;
+    min-height: 100vh;
+}
+
+:root {
+    --primary: rgb(200, 102, 105) !important;
+    --primary-hover: rgba(200, 102, 105, 0.5) !important;
+}

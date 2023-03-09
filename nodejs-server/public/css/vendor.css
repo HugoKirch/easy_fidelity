@@ -1,0 +1,26 @@
+main {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#search {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: available;
+    width: -moz-available;
+    width: -webkit-fill-available;
+}
+
+#result {
+    text-align: center;
+    font-size: 1.5rem;
+}

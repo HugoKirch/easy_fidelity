@@ -1,0 +1,30 @@
+<%- include('./header.ejs') %>
+<link rel="stylesheet" href="/public/css/admin.css">
+<script src="/public/js/admin.js"></script>
+<%- include('./vendor_admin_common.ejs') %>
+<button class="switcher vendorMode">Mode admin</button>
+<main id="admin_ui" style="display: none">
+    <form id="admin_search">
+        <input type="email" id="admin_email" placeholder="email de l'utilisateur" aria-label="email">
+        <button type="submit" id="search_user_btn">Rechercher</button>
+    </form>
+    <div id="admin_result" style="display: none">
+        <p id="admin_lastname">/p>
+        <p id="admin_firstname"></p>
+        <p id="admin_email"></p>
+        <p id="admin_phone"></p>
+        <p id="admin_created_at"> </p>
+        <p id="admin_points"></p>
+        <p id="admin_role"></p>
+        <div id="admin_btns">
+            <button id="admin_btn_vendor">passer vendeur</button>
+            <button id="admin_btn_admin">passer admin</button>
+            <button id="admin_btn_user">passer client</button>
+            <button id="admin_btn_delete">supprimer le compte</button>
+            <button id="admin_btn_cancel">annuler</button>
+        </div>
+    </div>
+</main>
+</article>
+</main>
+<%-include('./footer.ejs') %>

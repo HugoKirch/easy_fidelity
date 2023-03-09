@@ -1,0 +1,13 @@
+<%- include('./header.ejs') %>
+</head>
+<body>
+    <main class="container">
+        <article>
+            <h1>Votre compte a été créé avec succès</h1>
+            <p>Nous vous avons envoyé un mail à l'adresse <strong><%- mail %></strong> pour vérifier votre adresse.<br>
+            (Pensez à vérifier vos spams.)</p>
+            <button class="btn btn-primary" onclick="window.location.href='/login';">Aller à la connexion</button>
+        </article>
+    </main>
+</body>
+<%- include('./footer.ejs') %>

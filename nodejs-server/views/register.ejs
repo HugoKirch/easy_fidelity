@@ -1,0 +1,42 @@
+<%- include('./header.ejs') %>
+        <link rel="stylesheet" href="/public/css/register.css">
+        <script src="/public/js/register.js"></script>
+    </head>
+    <body>
+        <!-- Nav -->
+        <nav class="container-fluid">
+            <ul>
+                <li><a href="https://vacheburger.fr"><strong>Vache Burger</strong></a></li>
+            </ul>
+            <ul>
+                <li><button class="btn btn-outline-primary" onclick="window.location.href='./login'">Se connecter</button></li>
+            </ul>
+        </nav><!-- ./ Nav -->
+
+        <!-- Main -->
+        <main class="container">
+            <article>
+                <div>
+                    <hgroup>
+                        <h1>Inscription</h1>
+                        <h2>Tous les champs sont obligatoires</h2>
+                    </hgroup>
+                    <form id="register_form">
+                        <fieldset>
+                            <input type="email" name="email" id="email" placeholder="Mail" aria-label="email" autocomplete="email" required>
+                            <div class="register_two_columns">
+                                <input type="text" name="firstname" id="firstname" placeholder="Prénom" aria-label="prénom" autocomplete="given-name" required>
+                                <input type="text" name="lastname" id="lastname" placeholder="Nom" aria-label="nom" autocomplete="family-name" required>
+                            </div>
+                            <input type="tel" name="tel" id="phone" placeholder="Téléphone" aria-label="téléphone" autocomplete="tel">
+                            <label for="show_password"><input type="checkbox" name="show_password" id="show_password">Afficher le mot de passe</label>
+                            <input type="password" id="password" name="password" placeholder="Mot de passe" aria-label="Mot de passe" autocomplete="current-password" required>
+                            <label for="cgu"><input type="checkbox" role="switch" name="cgu" id="cgu" required>J'accepte les <a href="/cgu">conditions générales d'utilisation</a></label>
+                        </fieldset>
+                        <button class="contrast" id="submit_btn" type="submit">Inscription</button>
+                    </form>
+                </div>
+            </article>
+        </main><!-- ./ Main -->
+    </body>
+</html>
