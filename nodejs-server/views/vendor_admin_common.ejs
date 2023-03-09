@@ -6,7 +6,7 @@
 <!-- Nav -->
 <nav class="container-fluid">
     <ul>
-        <li><a href="https://vacheburger.fr"><strong>Vache Burger</strong></a></li>
+        <li><a href="<%- JSON.stringify(site.mainpage_url) %>"><strong><%- JSON.stringify(site.name) %></strong></a></li>
     </ul>
     <ul>
         <li><button id="logout_btn" class="btn btn-outline-primary">Déconnexion</button></li>
@@ -41,36 +41,7 @@
                         <details role="list">
                             <summary aria-haspopup="listbox">Points à retirer</summary>
                             <ul role="listbox">
-                                <li>
-                                    <label for="20">
-                                        <input type="radio" id="20" name="size" value="20">
-                                        20 points
-                                    </label>
-                                </li>
-                                <li>
-                                    <label for="40">
-                                        <input type="radio" id="40" name="size" value="40">
-                                        40 points
-                                    </label>
-                                </li>
-                                <li>
-                                    <label for="60">
-                                        <input type="radio" id="60" name="size" value="60">
-                                        60 points
-                                    </label>
-                                </li>
-                                <li>
-                                    <label for="75">
-                                        <input type="radio" id="75" name="size" value="75">
-                                        75 points
-                                    </label>
-                                </li>
-                                <li>
-                                    <label for="90">
-                                        <input type="radio" id="90" name="size" value="90">
-                                        90 points
-                                    </label>
-                                </li>
+                                <%- include('./vendor_points_list.ejs') %>
                             </ul>
                         </details>
                     </fieldset>
