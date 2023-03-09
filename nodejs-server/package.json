@@ -1,7 +1,7 @@
 {
   "name": "fidelite",
   "version": "1.0.0",
-  "description": "Vavche burger fidelite application",
+  "description": "easy_fidelity",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vache-Burger/fidelite.git"
+    "url": "git+https://github.com/HugoKirch/easy_fidelity.git"
   },
   "author": "Hugo Kirch",
-  "license": "none",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Vache-Burger/fidelite/issues"
+    "url": "https://github.com/HugoKirch/easy_fidelity/issues"
   },
-  "homepage": "https://github.com/Vache-Burger/fidelite#readme",
+  "homepage": "https://github.com/HugoKirch/easy_fidelity/#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",
